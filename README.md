@@ -8,13 +8,15 @@ Developed as the backend of a web application requested by Vectron Systems for a
 ### Setup
 1. Clone this repo to your laravel project path.
 
-2. Configure DB connection and rename `.env.example` to `.env` file.
+2. Navigate to project directory, run `composer install`
 
-3. Migrate & Seed database.
+3. Configure DB connection and rename `.env.example` to `.env` file.
+
+4. Migrate & Seed database.
 
 	`php artisan migrate --seed`
 
-4. Create passport clients to generate access tokens
+5. Create passport clients to generate access tokens
 
 	`php artisan passport:install`
 
