@@ -22,7 +22,10 @@ class UsersTableSeeder extends Seeder
                 'roles' => 'user|admin',
                 'created_at' => $ts,
                 'updated_at' => $ts,
-            ],
+            ]
+        );
+
+    	DB::table('users')->updateOrInsert(
             ['email' => 'user@vectron.com.au'],
             [
                 'name' => 'Normal user',
